@@ -1,22 +1,22 @@
-¹¦ÄÜÊµÏÖ£º
-1¡¢ÊµÏÖÒ»¸öÉè±¸£¬Ò»¸öÁ¬½Ó£¬¶¨Ê±·¢¹Ì¶¨°ü¡£ÒµÎñ²ÎÊý¿ÉÅäÖÃ
-2¡¢ÐÂÔö¶àÉè±¸£¬¶àÁ¬½Ó¡£¼°ºÄÊ±´òÓ¡
-3¡¢ÐÂÔöÉÏ±¨ÏÂÎ»»úÊý¾Ý°ü
-4¡¢ÐÂÔöÉÏ±¨ÏÂÎ»»ú±ä»¯Êý¾Ý°ü
-ÅäÖÃËµÃ÷£º
+åŠŸèƒ½å®žçŽ°ï¼š
+1ã€å®žçŽ°ä¸€ä¸ªè®¾å¤‡ï¼Œä¸€ä¸ªè¿žæŽ¥ï¼Œå®šæ—¶å‘å›ºå®šåŒ…ã€‚ä¸šåŠ¡å‚æ•°å¯é…ç½®
+2ã€æ–°å¢žå¤šè®¾å¤‡ï¼Œå¤šè¿žæŽ¥ã€‚åŠè€—æ—¶æ‰“å°
+3ã€æ–°å¢žä¸ŠæŠ¥ä¸‹ä½æœºæ•°æ®åŒ…
+4ã€æ–°å¢žä¸ŠæŠ¥ä¸‹ä½æœºå˜åŒ–æ•°æ®åŒ…
+é…ç½®è¯´æ˜Žï¼š
 [MQTTClinet]                          
-host = 172.16.22.170                  --·þÎñÆ÷ip
-port = 41564                             --mqtt¶Ë¿Ú
-username = hd                          --mqttÈÏÖ¤ÓÃ»§
-password = hdcloud890!           --mqttÈÏÖ¤ÃÜÂë
-sn = hongdian                          --Íø¹ØsnÇ°×º¡£¹Ì¶¨³¤¶È16Î»¡£¸ñÊ½ÐÎÈç£ºhongdian00000000
-productcode = MTYwNTc0ODc3MjY2Nw       --Íø¹ØµÄ²úÆ·±àÂë¡£walleÆ½Ì¨ÓÃµ½
+host = 172.16.22.170                  --æœåŠ¡å™¨ip
+port = 41564                             --mqttç«¯å£
+username = hd                          --mqttè®¤è¯ç”¨æˆ·
+password = hdcloud890!           --mqttè®¤è¯å¯†ç 
+sn = hongdian                          --ç½‘å…³snå‰ç¼€ã€‚å›ºå®šé•¿åº¦16ä½ã€‚æ ¼å¼å½¢å¦‚ï¼šhongdian00000000
+productcode = MTYwNTc0ODc3MjY2Nw       --ç½‘å…³çš„äº§å“ç¼–ç ã€‚walleå¹³å°ç”¨åˆ°
 
 [ProtocolData]
-Timer = 60                              --·¢°ü¼ä¸ô
-topic_pub = /UL/                    --Ö÷ÌâÇ°×º
-topic_name = /DPU/data        --ÒµÎñÖ÷Ìâ
-content = {                      --·¢°üÄÚÈÝ¡£Èô·¢±ä»¯Êý¾Ý£¬Õâ¸ö°üÄÚÈÝ²»¿É¸Ä¡£Èô·¢¹Ì¶¨Êý¾Ý£¬°üÄÚÈÝËæ±ã¸Ä
+Timer = 60                              --å‘åŒ…é—´éš”
+topic_pub = /UL/                    --ä¸»é¢˜å‰ç¼€
+topic_name = /DPU/data        --ä¸šåŠ¡ä¸»é¢˜
+content = {                      --å‘åŒ…å†…å®¹ã€‚è‹¥å‘å˜åŒ–æ•°æ®ï¼Œè¿™ä¸ªåŒ…å†…å®¹ä¸å¯æ”¹ã€‚è‹¥å‘å›ºå®šæ•°æ®ï¼ŒåŒ…å†…å®¹éšä¾¿æ”¹
 	"data": {
 		"device": "202105111510",
 		"onff": 1,
@@ -24,5 +24,7 @@ content = {                      --·¢°üÄÚÈÝ¡£Èô·¢±ä»¯Êý¾Ý£¬Õâ¸ö°üÄÚÈÝ²»¿É¸Ä¡£Èô·
 		"temp": 28
 		}
 	}
-count = 2                 --Íø¹ØÊýÁ¿
-lp_count = 3            --ÏÂÎ»»úÊýÁ¿¡£walleÆ½Ì¨ÓÃµ½    ÏÂÎ»»úsn¸úÆäËùÊôÍø¹ØsnÏà¹ØÁª¡£ÐÎÈç£ºhongdian00000000_0
+count = 2                 --ç½‘å…³æ•°é‡
+lp_count = 3            --ä¸‹ä½æœºæ•°é‡ã€‚walleå¹³å°ç”¨åˆ°    ä¸‹ä½æœºsnè·Ÿå…¶æ‰€å±žç½‘å…³snç›¸å…³è”ã€‚å½¢å¦‚ï¼šhongdian00000000_0
+
+è½®è¯¢æž„å»º
